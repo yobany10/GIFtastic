@@ -8,13 +8,13 @@ $(document).ready(function() {
     }
 });
 
-function gifButtonClicked () {
-    var userInput = $('#userInput').val();
+function heroButtonClicked () {
+    var userInput = $('#user-input').val();
     searchGif(userInput);
 }
 
 function submitButtonClicked() {
-    var userInput = $('#userInput').val();
+    var userInput = $('#user-input').val();
 
     if (userInput) {
         $('#hero-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-info' value=' " + userInput + "'> " + userInput + " </button>");

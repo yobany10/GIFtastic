@@ -23,11 +23,11 @@ function submitButtonClicked() {
 
 function searchGif(gifName) {
     $.ajax({
-        url: "http://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=yIv7GlpxlU8oADBjlF8ixp7FLJg85rFw&limit=10",
+        url: "http://api.giphy.com/v1/gifs/search?q=" + gifName + "&api_key=yIv7GlpxlU8oADBjlF8ixp7FLJg85rFw&limit=10",
         type: 'GET',
     })
     .done(function(response) {
-        displayGIF(response);
+        displayGif(response);
     })
 }
 

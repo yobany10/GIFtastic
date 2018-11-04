@@ -5,3 +5,8 @@ body {
 .topHeader {
     text-align: center;
 }
+
+.gifButtons {
+    text-align: center;
+    margin-bottom: 20px;
+}
